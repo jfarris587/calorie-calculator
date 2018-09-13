@@ -1,0 +1,21 @@
+.display{
+  background:linear-gradient(0deg,rgba($dark-purple, .90),rgba($light-purple, .90)),url("../img/food.jpg");
+    background-size:cover;  height: 100vh;
+  padding: 0;
+  position: relative;
+
+  .heading{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    h1{
+      font-family: "Deansgate", sans-serif;
+      color: $primary-white;
+      font-size: 6vw;
+      text-align: center;
+      //text-shadow: 0px 3px rgba(0, 0, 0, .2);
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.input{
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid $primary-gray;
+  font-size: 1.7rem;
+  display: inline-block;
+  background: #fff;
+  margin: 5px 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: auto;
+  display: block;
+  width: 150px;
+  font-weight: 700;
+
+
+  &::placeholder{
+    color: rgba($primary-black, .5);
+  }
+
+  &:focus{
+    outline: none;
+  }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+}
+
+.age{
+  width: 70px;
+
+}
+
+.height{
+  width: 130px;
+
+}
+
+.weight{
+
+
+}

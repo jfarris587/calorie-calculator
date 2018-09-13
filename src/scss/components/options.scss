@@ -1,0 +1,33 @@
+.options{
+  background: $primary-gray;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 13px;
+
+  .option{
+    font-size: 1.7rem;
+    display: inline-block;
+    background: $primary-white;
+    margin: 5px 5px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, .1);
+    cursor: default;
+    transition: 100ms;
+
+    &-selected{
+      background: $primary-blue;
+      box-shadow: 0 1px 0 2px rgba(#1c317a, .9);
+      color: $primary-white;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .options{
+    width: 100%;
+  }
+  .options .option{
+    display: block;
+  }
+}

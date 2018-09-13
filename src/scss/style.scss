@@ -1,0 +1,43 @@
+@import "base/variables.scss";
+
+@import "layout/display.scss";
+@import "layout/menu.scss";
+@import "layout/form.scss";
+
+@import "components/button.scss";
+@import "components/options.scss";
+@import "components/input.scss";
+@import "components/slider.scss";
+
+html{
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  text-rendering: optimizeLegibility;
+  letter-spacing: .04rem;
+}
+
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+.row{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#root{
+  position: relative;
+}
