@@ -11,11 +11,13 @@ const Display = (props) => {
 
           <div className="title">
             <h2>TDEE CALCULATOR</h2>
-            <p>Use this calculator to determin what your daily caloric intake needs to be to meet your goals.</p>
+            <p>Find your daily caloric needs.</p>
           </div>
         </div>
 
-        <Form />
+        <Form
+          setCalories={props.setCalories}
+        />
       </div>
   );
 }

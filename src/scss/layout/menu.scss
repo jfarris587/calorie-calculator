@@ -1,14 +1,15 @@
 .menu{
   margin: 0 auto;
-  //background: #eee;
-  padding: 60px 100px;
+  background: $primary-white;
+  padding: 50px 50px 20px 50px;
+  background: #f6f6f6;
 
   .heading{
-    margin-bottom: 140px;
+    //margin-bottom: 140px;
 
     .logo{
       display: block;
-      width: 120px;
+      width: 100px;
       float: left;
 
       i{
@@ -20,8 +21,8 @@
 
     .title{
       display: block;
-      float: left;
       width: auto;
+      margin-bottom: 25px;
 
       h2{
         font-size: 3.5rem;

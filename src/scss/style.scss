@@ -21,6 +21,8 @@ body{
   font-family: 'Nunito', sans-serif;
   text-rendering: optimizeLegibility;
   letter-spacing: .04rem;
+  //background: linear-gradient(30deg, $primary-purple, $light-purple);
+  height: 100vh;
 }
 
 
@@ -39,5 +41,19 @@ p{
 }
 
 #root{
-  position: relative;
+  width: 100%;
+  //height: 600px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top:50px;
+
+}
+
+@media (max-width:991px) {
+  #root{
+    margin-top:0px;
+
+  }
 }

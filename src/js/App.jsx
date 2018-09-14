@@ -7,14 +7,12 @@ class App extends Component {
     super(props);
 
     this.state = {
-      date: null,
-      diary:{
-        breakfast:[null],
-        lunch:[null],
-        dinner:[null],
-        snacks:[null]
-      }
+      calories: 2000
     };
+  }
+
+  setCalories = (c) =>{
+    this.setState({calories: c})
   }
 
   render() {
@@ -24,7 +22,20 @@ class App extends Component {
     else{
       return (
         <React.Fragment>
-          <Menu />
+          <div class="row row-eq-height">
+            <div class="col-lg-4 p-0">
+              <div class="display">
+                <div class="heading">
+                  <h1>{this.state.calories} Calories</h1>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 p-0">
+              <Menu
+                setCalories={this.setCalories}
+              />
+            </div>
+          </div>
         </React.Fragment>
       );
     }

@@ -89,9 +89,8 @@ class Form extends Component {
 
 
     var tempState = this.state;
-    tempState.TDEE = Math.round(TDEE) + " Calories";
+    this.props.setCalories(Math.round(TDEE));
 
-    this.setState(tempState);
   }
 
 
@@ -115,10 +114,10 @@ class Form extends Component {
       return (
         <form className="form">
           <div className="row">
-            <div className="field col-sm-1">
+            <div className="field col-sm-2">
               <p>Goal</p>
             </div>
-            <div className="col-sm-11">
+            <div className="col-sm-10">
               <Options
                 list={
                   [
@@ -134,10 +133,10 @@ class Form extends Component {
           </div>
 
           <div className="row">
-            <div className="field col-sm-1">
+            <div className="field col-sm-2">
               <p>Units</p>
             </div>
-            <div className="col-sm-11">
+            <div className="col-sm-10">
               <Options
                 list={
                   [
@@ -152,10 +151,10 @@ class Form extends Component {
           </div>
 
           <div className="row">
-            <div className="field col-sm-1">
+            <div className="field col-sm-2">
               <p>Sex</p>
             </div>
-            <div className="col-sm-11">
+            <div className="col-sm-10">
               <Options
                 list={
                   [
@@ -170,37 +169,37 @@ class Form extends Component {
           </div>
 
           <div className="row">
-            <div className="field col-sm-1">
+            <div className="field col-sm-2">
               <p>Weight</p>
             </div>
-            <div className="col-sm-11">
+            <div className="col-sm-10">
               <input className="input weight" type="number" name="weight" placeholder={weight_place} onChange={this.inputValue}/>
             </div>
           </div>
 
           <div className="row">
-            <div className="field col-sm-1">
+            <div className="field col-sm-2">
               <p>Height</p>
             </div>
-            <div className="col-sm-11">
+            <div className="col-sm-10">
               <input className="input height" type="number" name="height" placeholder={height_place} onChange={this.inputValue}/>
             </div>
           </div>
 
           <div className="row">
-            <div className="field col-sm-1">
+            <div className="field col-sm-2">
               <p>Age</p>
             </div>
-            <div className="col-sm-11">
+            <div className="col-sm-10">
               <input className="input age" type="number" name="age" placeholder={age_place} onChange={this.inputValue}/>
             </div>
           </div>
 
           <div className="row margin-below">
-            <div className="field col-sm-1">
+            <div className="field col-sm-2">
               <p>Activity</p>
             </div>
-            <div className="col-sm-11">
+            <div className="col-sm-10">
               <input type="range" min="1" step="1" max="18" defaultValue="10" onChange={this.sliderValue} className="slider" name="activity" id="myRange"/>
               <div className="slider-info">
                 {activity_place}
@@ -215,8 +214,6 @@ class Form extends Component {
               <button type='button' className="button" onClick={this.calculate}>Calculate</button>
             </div>
           </div>
-
-          <p>{this.state.TDEE}</p>
         </form>
       );
     }
